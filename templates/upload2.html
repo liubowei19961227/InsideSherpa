@@ -1,0 +1,46 @@
+{% extends "master_template.html" %}
+
+{% block mainpage %}
+<div id="pageintro" class="hoc clear">
+    <article> 
+      <!-- ################################################################################################ -->
+      <h3 class="heading">Inside Sherpa</h3>
+      <p>Click below to upload your file!</p>
+      <p class="font-x1 uppercase bold">Join with Bowei</p>
+      <footer>
+        <ul class="nospace inline pushright">
+
+         <form action = "http://localhost:5000/uploader" method = "POST" 
+             enctype = "multipart/form-data">
+             <input type = "file" name = "file"
+             size = "35";
+              style="background-color:white; 
+                  border: solid 2px #6E6E6E;
+                  height: 30px; 
+                  font-size:0px; 
+                  vertical-align:14px" 
+             />
+             <input type = "submit"
+             size = "35";
+              style="background-color:blue; 
+                  border: solid 2px #6E6E6E;
+                  height: 30px; 
+                  font-size:12px; 
+                  vertical-align:10px" 
+             />
+          </form>
+
+         <!--<form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+         </form>-->
+        
+        </ul>
+      </footer>
+      <!-- ################################################################################################ -->
+    </article>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+{% endblock %}
